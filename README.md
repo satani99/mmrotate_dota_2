@@ -8,7 +8,7 @@ conda create -n dota python==3.8 -y
 conda activate dota
 ```
 
-Then install pytorch, torchvision, mmdet, mmcv and mmrotate libraries.
+Then install pytorch, torchvision, mmdet, mmcv, and mmrotate libraries.
 
 ```bash
 conda install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
@@ -44,5 +44,11 @@ cd demo
 python filter_labels.py
 ```
 
-After completing above steps run ```dota_finetuning.ipynb``` in demo folder.
+After completing the above steps run ```dota_finetuning.ipynb``` in the demo folder.
+
+# Result
+
+For fine-tuning for only three epochs we can achieve 28.5% mAP and training for more epochs would yield better results. It took around 1.5 hours for three epochs to complete on RTX 3060.
+
+![alt text](https://github.com/satani99/mmrotate_dota_2/blob/main/demo/result.png?raw=true)
 
